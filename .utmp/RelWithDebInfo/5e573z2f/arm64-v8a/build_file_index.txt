@@ -1,0 +1,2 @@
+C:\Users\Fabrizzio Emanuel\Documents\ITC_Semestre_4\ITC_ConstruccionSoftware\Github\VR_Escape_Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\Fabrizzio Emanuel\Documents\ITC_Semestre_4\ITC_ConstruccionSoftware\Github\VR_Escape_Room\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
