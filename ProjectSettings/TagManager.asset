@@ -10,6 +10,7 @@ TagManager:
   - Spades
   - Hammer
   - Protected
+  - retro
   layers:
   - Default
   - TransparentFX
