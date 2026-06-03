@@ -247,7 +247,9 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

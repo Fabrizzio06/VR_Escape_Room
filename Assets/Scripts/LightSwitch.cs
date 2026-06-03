@@ -1,21 +1,35 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class LightSwitch : MonoBehaviour
 {
-    [SerializeField] Light targetLight;
-    [SerializeField] GameObject[] cartasNormales;
-    [SerializeField] GameObject[] cartasBrillantes;
+    [Header("Luz")]
+    public Light luzEscena;
+
+    [Header("Switch visual")]
+    public GameObject switchOn;
+    public GameObject switchOff;
+
+    [Header("Carta correcta")]
+    public Renderer cartaClubs;
+    public Material materialNormal;
+    public Material materialBrillante;
+
+    public AudioSource switchSound;
+
+    private bool toggle = true;
 
     public void ToggleLight()
     {
-        bool apagarLuz = targetLight.enabled;
-        targetLight.enabled = !apagarLuz;
+        toggle = !toggle;
 
-        foreach (var carta in cartasNormales)
-            carta.SetActive(apagarLuz); // se ocultan
+        luzEscena.enabled = toggle;
+        switchOn.SetActive(toggle);
+        switchOff.SetActive(!toggle);
 
-        foreach (var carta in cartasBrillantes)
-            carta.SetActive(!apagarLuz); // aparecen brillando
+        // Luz apagada → carta brilla. Luz encendida → carta normal
+        cartaClubs.material = toggle ? materialNormal : materialBrillante;
+
+        if (switchSound != null)
+            switchSound.Play();
     }
 }
