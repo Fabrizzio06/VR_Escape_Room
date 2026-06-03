@@ -159,9 +159,7 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [
-              "Assets/Scenes/VR_Game.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -485,14 +483,18 @@
           },
           {
             "name": "Texture",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
