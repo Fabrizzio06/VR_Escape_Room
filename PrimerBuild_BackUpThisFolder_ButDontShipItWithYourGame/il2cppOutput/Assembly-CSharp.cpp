@@ -3141,63 +3141,71 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightSwitch_ToggleLight_mF2D560252060FF1
 		NullCheck(L_1);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_1, L_2, NULL);
 		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:26>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___switchOn;
-		bool L_4 = __this->___toggle;
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_3 = __this->___luzEscena;
 		NullCheck(L_3);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, L_4, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		bool L_5 = __this->___toggle;
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, L_5, NULL);
 		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:27>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___switchOff;
-		bool L_6 = __this->___toggle;
-		NullCheck(L_5);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:30>
-		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_7 = __this->___cartaClubs;
-		bool L_8 = __this->___toggle;
-		if (L_8)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___switchOn;
+		bool L_7 = __this->___toggle;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, L_7, NULL);
+		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:28>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___switchOff;
+		bool L_9 = __this->___toggle;
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)((((int32_t)L_9) == ((int32_t)0))? 1 : 0), NULL);
+		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:31>
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_10 = __this->___cartaClubs;
+		bool L_11 = __this->___toggle;
+		if (L_11)
 		{
-			G_B2_0 = L_7;
-			goto IL_005b;
+			G_B2_0 = L_10;
+			goto IL_0071;
 		}
-		G_B1_0 = L_7;
+		G_B1_0 = L_10;
 	}
 	{
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_9 = __this->___materialBrillante;
-		G_B3_0 = L_9;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_12 = __this->___materialBrillante;
+		G_B3_0 = L_12;
 		G_B3_1 = G_B1_0;
-		goto IL_0061;
+		goto IL_0077;
 	}
 
-IL_005b:
+IL_0071:
 	{
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_10 = __this->___materialNormal;
-		G_B3_0 = L_10;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_13 = __this->___materialNormal;
+		G_B3_0 = L_13;
 		G_B3_1 = G_B2_0;
 	}
 
-IL_0061:
+IL_0077:
 	{
 		NullCheck(G_B3_1);
 		Renderer_set_material_m21E88977071E0A914D62F3D9CFF0193B3117C45A(G_B3_1, G_B3_0, NULL);
-		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:32>
-		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_11 = __this->___switchSound;
+		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:33>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_14 = __this->___switchSound;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_12;
-		L_12 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_11, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_12)
+		bool L_15;
+		L_15 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_15)
 		{
-			goto IL_007f;
+			goto IL_0095;
 		}
 	}
 	{
-		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:33>
-		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_13 = __this->___switchSound;
-		NullCheck(L_13);
-		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_13, NULL);
+		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:34>
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_16 = __this->___switchSound;
+		NullCheck(L_16);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_16, NULL);
 	}
 
-IL_007f:
+IL_0095:
 	{
-		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:34>
+		//<source_info:C:/Users/Fabrizzio Emanuel/Documents/ITC_Semestre_4/ITC_ConstruccionSoftware/Github/VR_Escape_Room/Assets/Scripts/LightSwitch.cs:35>
 		return;
 	}
 }

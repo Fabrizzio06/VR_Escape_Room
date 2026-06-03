@@ -23,6 +23,7 @@ public class LightSwitch : MonoBehaviour
         toggle = !toggle;
 
         luzEscena.enabled = toggle;
+        luzEscena.gameObject.SetActive(toggle);
         switchOn.SetActive(toggle);
         switchOff.SetActive(!toggle);
 
