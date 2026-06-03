@@ -7,6 +7,9 @@ TagManager:
   - Clubs
   - Dimond
   - Heart
+  - Spades
+  - Hammer
+  - Protected
   layers:
   - Default
   - TransparentFX

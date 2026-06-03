@@ -26,7 +26,7 @@ public class LightSwitch : MonoBehaviour
         toggle = !toggle;
 
         
-        luzEscena.intensity = toggle ? 100 : 2;
+        luzEscena.intensity = toggle ? 100 : 0;
         switchOn.SetActive(toggle);
         switchOff.SetActive(!toggle);
 

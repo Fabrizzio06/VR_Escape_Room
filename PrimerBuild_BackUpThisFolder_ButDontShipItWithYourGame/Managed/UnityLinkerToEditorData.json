@@ -84,7 +84,9 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -104,13 +106,17 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AudioSource",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -159,7 +165,9 @@
           },
           {
             "name": "Cubemap",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/VR_Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -483,18 +491,14 @@
           },
           {
             "name": "Texture",
-            "scenes": [
-              "Assets/Scenes/VR_Game.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
             "name": "Texture2D",
-            "scenes": [
-              "Assets/Scenes/VR_Game.unity"
-            ],
-            "dependencyType": 0,
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
